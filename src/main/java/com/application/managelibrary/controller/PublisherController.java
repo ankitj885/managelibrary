@@ -18,7 +18,7 @@ public class PublisherController {
     PublisherService publisherService;
 
     @GetMapping("/publishers")
-    public String findAllPublishers(Model model){
+    public String listPublishers(Model model){
         List<Publisher> publishers = publisherService.findAllPublishers();
         model.addAttribute("publishers", publishers);
         return "publishers";
