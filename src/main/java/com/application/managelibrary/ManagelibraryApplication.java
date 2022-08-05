@@ -18,7 +18,7 @@ public class ManagelibraryApplication {
 	}
 
 	//setting up dummy data for the project
-	@Bean
+	/*@Bean
 	public CommandLineRunner initialCreate(BookService bookService){
 		return (args) -> {
 			Book book1 = new Book("978-93-5019-561-1", "Introduction to Computer","Junior Level Books");
@@ -48,5 +48,5 @@ public class ManagelibraryApplication {
 			book3.addPublisher(publisher3);
 			bookService.createBook(book3);
 		};
-	}
+	}*/
 }
