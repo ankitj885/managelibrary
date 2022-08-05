@@ -26,7 +26,7 @@ public class Book {
     @Column(name = "description", length = 250, nullable = false)
     private String description;
 
-    @Column(name = "isbm", length = 50, nullable = false, unique = true)
+    @Column(name = "isbn", length = 50, nullable = false, unique = true)
     private String isbn;
 
     @ManyToMany(cascade = {CascadeType.ALL})
