@@ -18,35 +18,35 @@ public class ManagelibraryApplication {
 	}
 
 	//setting up dummy data for the project
-	/*@Bean
+	@Bean
 	public CommandLineRunner initialCreate(BookService bookService){
 		return (args) -> {
-			Book book1 = new Book("ANC", "Book Name","My First Book");
-			Author author1 = new Author("Test Name1", "Test description1");
-			Category category1 = new Category("Business Books");
-			Publisher publisher1 = new Publisher("First Publisher");
+			Book book1 = new Book("978-93-5019-561-1", "Introduction to Computer","Junior Level Books");
+			Author author1 = new Author("Amit Garg", "Test description1");
+			Category category1 = new Category("Computer Books");
+			Publisher publisher1 = new Publisher("Reader's Zone");
 			book1.addAuthor(author1);
 			book1.addCategory(category1);
 			book1.addPublisher(publisher1);
 			bookService.createBook(book1);
 
-			Book book2 = new Book("ANC1", "Book Name1","My Second Book");
-			Author author2 = new Author("Test Name2", "Test description2");
-			Category category2 = new Category("Science Books");
-			Publisher publisher2 = new Publisher("Second Publisher");
+			Book book2 = new Book("975-93-5353-364-1", "Computer Networks","For info on C/N");
+			Author author2 = new Author("Saurabh Singhal", "Test description2");
+			Category category2 = new Category("Network Books");
+			Publisher publisher2 = new Publisher("Thakur Publications");
 			book2.addAuthor(author2);
 			book2.addCategory(category2);
 			book2.addPublisher(publisher2);
 			bookService.createBook(book2);
 
-			Book book3 = new Book("ANC2", "Book Name2","My Third Book");
-			Author author3 = new Author("Test Name3", "Test description3");
-			Category category3 = new Category("Art Books");
-			Publisher publisher3 = new Publisher("Third Publisher");
+			Book book3 = new Book("0-312-86624-0", "The Dark Beyond the Stars","Story of generation ship");
+			Author author3 = new Author("Frank M. Robinson", "Test description3");
+			Category category3 = new Category("Science fiction");
+			Publisher publisher3 = new Publisher("Orb Books");
 			book3.addAuthor(author3);
 			book3.addCategory(category3);
 			book3.addPublisher(publisher3);
 			bookService.createBook(book3);
 		};
-	}*/
+	}
 }
